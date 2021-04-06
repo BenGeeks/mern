@@ -20,6 +20,7 @@ export default makeStyles({
     borderRadius: '15px',
     height: '100%',
     position: 'relative',
+    boxShadow: '1px 1px 8px',
   },
   overlay: {
     position: 'absolute',
@@ -42,7 +43,7 @@ export default makeStyles({
     margin: '20px',
   },
   title: {
-    padding: '0 16px',
+    padding: '0 5px',
   },
   cardActions: {
     padding: '0 16px 8px 16px',

@@ -1,10 +1,12 @@
-import express from 'express'
+import express from 'express';
 
-import { getPosts, createPosts } from '../controller/post.js'
+import { getPosts, createPosts, updatePost, deletePost } from '../controller/post.js';
 
-const router = express.Router()
+const router = express.Router();
 
-router.get('/', getPosts)
-router.post('/', createPosts)
+router.get('/', getPosts);
+router.post('/', createPosts);
+router.patch('/:id', updatePost);
+router.delete('/:id', deletePost);
 
-export default router
+export default router;
